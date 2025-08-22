@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Network Security Analysis{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12 text-center mb-4">
+        <h1 class="display-4">Network Security Analysis</h1>
+        <p class="lead">Advanced intrusion detection and network packet analysis</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0">About the Project</h5>
+            </div>
+            <div class="card-body">
+                <p>This project uses machine learning to analyze network packets and detect potential intrusions or malicious activities. The system is trained on the KDD dataset and can identify various types of network attacks.</p>
+                <p>Key features include:</p>
+                <ul>
+                    <li>Real-time packet analysis</li>
+                    <li>Machine learning-based detection</li>
+                    <li>Secure API with identity verification</li>
+                    <li>Comprehensive reporting</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h5 class="card-title mb-0">Available Endpoints</h5>
+            </div>
+            <div class="card-body">
+                <div class="list-group">
+                    <a href="/projects" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Projects
+                        <span class="badge bg-primary rounded-pill">GET</span>
+                    </a>
+                    <a href="/analyze" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                        Analyze Network Packets
+                        <span class="badge bg-success rounded-pill">POST</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h5 class="card-title mb-0">How It Works</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4 text-center mb-3">
+                        <div class="p-3 border rounded">
+                            <h3 class="h5">1. Data Collection</h3>
+                            <p>Network packets are captured and preprocessed for analysis</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center mb-3">
+                        <div class="p-3 border rounded">
+                            <h3 class="h5">2. Feature Extraction</h3>
+                            <p>Key features are extracted from the packets for the ML model</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center mb-3">
+                        <div class="p-3 border rounded">
+                            <h3 class="h5">3. Analysis & Detection</h3>
+                            <p>The ML model analyzes the features to detect potential threats</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
